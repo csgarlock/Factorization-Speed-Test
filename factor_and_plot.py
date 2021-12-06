@@ -32,17 +32,14 @@ def gen_axis(samples, n_min, n_max, factor_samples):
 	return (x_axis, y_axis)
 
 def main():
-	total, average = factor_test(1000, 1, 1e7)
-	print(total)
-	print(average)
-	# max = 100000000
-	# x_fac, y_fac = gen_axis(250, 1, max, 30000)
-	# fig, ax = plt.subplots()
-	# ax.set_xlabel("Size of Maximum Integer")
-	# ax.set_ylabel("Time in Seconds")
-	# ax.plot(x_fac, y_fac)
-	# fig.show()
-	# plt.show()
+	max = 1000000
+	x_fac, y_fac = gen_axis(100, 1, max, 10000)
+	fig, ax = plt.subplots()
+	ax.set_xlabel("Size of Maximum Integer")
+	ax.set_ylabel("Time in Seconds")
+	ax.plot(x_fac, y_fac)
+	fig.show()
+	plt.show()
 
 if __name__ == '__main__':
 	main()
