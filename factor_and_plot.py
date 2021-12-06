@@ -22,7 +22,7 @@ def factor_test(tests, min, max):
 	return ((end-start), (end-start)/tests)
 
 #Generates the axis to be used by matplotlib. Takes evenly spaced samples between n_max
-#and n_min. Then runs a factor test for each for the samples
+#and n_min. Then runs a factor test for each of the samples
 def gen_axis(samples, n_min, n_max, factor_samples):
 	x_axis = np.linspace(n_min, n_max, samples)
 	y_axis_list = []
