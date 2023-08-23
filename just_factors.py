@@ -9,7 +9,7 @@ def factor(num):
 		if (num % i == 0):
 			return i
 
-#Runs a certain number of tests on how long it takes to factor a random number between min and max
+#Runs a certain number of tests on how long it takes to factor a random number between min and max bruh
 #and returns the average
 def factor_test(tests, n_min, n_max, display):
 	if(display):
